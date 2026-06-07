@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fawaz — Product-focused Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Fawaz</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Digital product design & engineering</span>
+          <h1>Building sleek, reliable web experiences with purpose.</h1>
+          <p>I'm a web developer who turns complex ideas into polished websites, modern interfaces, and high-performing online products.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#work">Explore Work</a>
+            <a class="btn btn-secondary" href="#contact">Let’s Talk</a>
+          </div>
+          <div class="stats">
+            <div>
+              <strong>8+</strong>
+              <span>Years experience</span>
+            </div>
+            <div>
+              <strong>30+</strong>
+              <span>Projects shipped</span>
+            </div>
+            <div>
+              <strong>15</strong>
+              <span>Happy clients</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="panel-card">
+            <h2>Selected highlights</h2>
+            <ul>
+              <li>Fast front-end architecture using React, Next.js, and TypeScript.</li>
+              <li>Accessible, responsive interfaces for desktop and mobile.</li>
+              <li>Performance and SEO optimizations tailored for effective launch.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container section-grid">
+        <div>
+          <p class="section-label">About me</p>
+          <h2>Professional approach with a sharp focus on clarity.</h2>
+          <p>I help teams and founders ship products that look refined and feel intuitive. My work blends thoughtful UI design with clean engineering so every experience is fast, accessible, and easy to maintain.</p>
+        </div>
+        <div class="cards-row">
+          <article class="info-card">
+            <h3>Modern interfaces</h3>
+            <p>Design systems, animation, and responsive layouts that look exceptional across devices.</p>
+          </article>
+          <article class="info-card">
+            <h3>Reliable delivery</h3>
+            <p>Readable code, version control, and collaboration-ready workflows that streamline launches.</p>
+          </article>
+          <article class="info-card">
+            <h3>Data-driven decisions</h3>
+            <p>Focus on usability, performance, and measurable outcomes for each project.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section section-alt">
+      <div class="container">
+        <p class="section-label">Selected work</p>
+        <h2>Projects that combine polish, performance, and clarity.</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-meta">
+              <span>Brand refresh</span>
+              <strong>Launch-ready marketing site</strong>
+            </div>
+            <p>Designed and built a responsive landing page with modular CMS integration, accessible components, and fast loading times.</p>
+            <div class="badges"><span>React</span><span>Tailwind</span><span>SEO</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">
+              <span>Product platform</span>
+              <strong>Subscription dashboard</strong>
+            </div>
+            <p>Delivered a clean dashboard experience with auth flows, performance optimizations, and a modular React component library.</p>
+            <div class="badges"><span>Next.js</span><span>TypeScript</span><span>API</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">
+              <span>Performance boost</span>
+              <strong>Speed and accessibility audit</strong>
+            </div>
+            <p>Improved page speed, accessibility scores, and mobile UX for a high-traffic site while preserving brand design.</p>
+            <div class="badges"><span>Performance</span><span>Audit</span><span>WCAG</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <p class="section-label">What I use</p>
+        <h2>Tools and technologies I rely on every day.</h2>
+        <div class="skills-grid">
+          <span>HTML & CSS</span>
+          <span>JavaScript</span>
+          <span>TypeScript</span>
+          <span>React</span>
+          <span>Next.js</span>
+          <span>Tailwind CSS</span>
+          <span>Figma</span>
+          <span>Git</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-label">Get in touch</p>
+          <h2>Ready to build something great?</h2>
+          <p>Whether you have a new product idea or want to improve an existing experience, I’m happy to connect and explore the best path forward.</p>
+          <div class="contact-info">
+            <div><strong>Email</strong><a href="mailto:adepojufawaz005@gmail.com">adepojufawaz005@gmail.com</a></div>
+            <div><strong>Location</strong><span>Remote / Worldwide</span></div>
+          </div>
+        </div>
+        <form class="form" onsubmit="event.preventDefault(); showThanks();">
+          <label>
+            <span>Name</span>
+            <input name="name" type="text" placeholder="Your name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <p id="thanks" class="thanks" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Fawaz. Designed for growth.</span>
+      <div class="social-links">
+        <a href="https://github.com/kaniel2005-sys" target="_blank">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function showThanks() {
+      const el = document.getElementById('thanks');
+      el.textContent = 'Thanks! Your message has been captured (demo).';
+    }
+  </script>
+</body>
+</html>
+
